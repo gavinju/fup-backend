@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0.27
+    container_name: crfu-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root #设置root帐号密码
+    ports:
+      - 3306:3306
+    volumes:
+      - /opt/crfu/mysql/data/db:/var/lib/mysql
+      - ./mysql/conf/mysql_db.cnf:/etc/mysql/conf.d/mysql_db.cnf
+      - ./mysql/init/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+      - /opt/crfu/mysql/log:/var/log/mysql
