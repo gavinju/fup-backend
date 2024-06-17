@@ -7,9 +7,9 @@ spring:
   application:
     name: FileCloud # 应用名称
   datasource:
-    url: jdbc:mysql://localhost:3306/filecloud?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: 123456
+    url: jdbc:mysql://localhost:3306/crfu_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: crfu
+    password: crfu123
     driverClassName: com.mysql.cj.jdbc.Driver
   session:
     # 生效时间为一天
@@ -56,6 +56,7 @@ file:
     - .jpeg
     - .svg
     - .zip
+    - .pdf
   # 黑名单
   blocked:
     - "127.0.0.1"
