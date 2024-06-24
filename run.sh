@@ -6,7 +6,6 @@ jarName=file-cloud.jar
 logFile=1.out
 
 # 拉取代码 构建项目
-git pull
 mvn clean package
          
 # 停止旧进程
