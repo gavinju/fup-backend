@@ -52,11 +52,13 @@ file:
     - .jpg
     - .png
     - .gif
-    - .bmp
     - .jpeg
-    - .svg
-    - .zip
     - .pdf
+    - .doc
+    - .docx
+    - .rtf
+    - .xlsx
+    - .xls
   # 黑名单
   blocked:
     - "127.0.0.1"
